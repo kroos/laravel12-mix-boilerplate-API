@@ -22,3 +22,5 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+/public/css/tailwind.css
+/public/css/app.css

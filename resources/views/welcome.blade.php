@@ -10,6 +10,7 @@
 	<div class="col-sm-12 row text-center align-items-center my-2 m-0 border border-success">
 		<div class="tw">
 			<p class="text-3xl font-bold underline">Hello tailwindcss</p>
+			<p class="text-xl font-bold underline text-red ">tailwindcss V3 works only with Laravel Mix, tailwindcss V4 will not work with Laravel Mix except Vite.</p>
 			<div class="bg-green-500 text-white px-4 py-2 rounded mb-2">
 				Tailwind v3 + Laravel Mix works 🎉
 			</div>
@@ -18,8 +19,10 @@
 		<p>If you want to use tailwindcss class, please wrap it with "tw" class. This has been made to resolve conflicts between bootstrap and tailwindcss</p>
 		<p>{{ __('<div class="tw"><p class="text-3xl font-bold underline">Hello tailwindcss</p></div>') }}</p>
 		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
-			<label class="form-check-label" for="switchCheckDefault">Default switch checkbox input</label>
+			<label class="form-check-label" for="switchCheckDefault">
+				<input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+				Default switch checkbox input
+			</label>
 		</div>
 	</div>
 
