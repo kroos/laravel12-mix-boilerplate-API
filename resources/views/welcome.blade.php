@@ -10,7 +10,7 @@
 	<div class="col-sm-12 row text-center align-items-center my-2 m-0 border border-success">
 		<div class="tw">
 			<p class="text-3xl font-bold underline">Hello tailwindcss</p>
-			<p class="text-xl font-bold underline text-red ">tailwindcss V3 works only with Laravel Mix, tailwindcss V4 will not work with Laravel Mix except Vite.</p>
+			<p class="text-sm font-bold underline text-red ">tailwindcss V3 works only with Laravel Mix and Vite, tailwindcss V4 will not work with Laravel Mix except Vite but conflicted with bootstrap.</p>
 			<div class="bg-green-500 text-white px-4 py-2 rounded mb-2">
 				Tailwind v3 + Laravel Mix works 🎉
 			</div>
@@ -282,7 +282,8 @@ $("#dp").jqueryuiDatepicker({
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////
-DataTable.datetime('D MMM YYYY');
+$.fn.dataTable.moment( 'D MMM YYYY' );
+$.fn.dataTable.moment( 'h:mm a' );
 $('#table_id').DataTable({
 	'lengthMenu': [ [30, 60, 100, -1], [30, 60, 100, 'All'] ],
 	'columnDefs': [
