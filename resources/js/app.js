@@ -34,13 +34,13 @@ try {
 	// require('@claviska/jquery-minicolors');
 	require('./minicolors');
 
-	require('./dataTable-any-number');
-	require('./datetime-moment');
-
 	require('./bootstrapValidator5');
 
 	require('./addRemoveRowjQueryPlugins');
 
 	require('./bootstrap');
+
+	require('./dataTable-any-number');
+	require('./datetime-moment');
 
 } catch (e) {}
