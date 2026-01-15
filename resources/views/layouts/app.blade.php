@@ -18,10 +18,11 @@ $currentYear = Carbon::now()->year;
 	<link href="" type="image/x-icon" rel="icon" />
 
 	<!-- Styles / Scripts -->
-	@vite(['resources/scss/app.scss', 'resources/css/app.css', 'resources/js/app.js'])
+	<link href="{{ mix('css/app.css') }}" rel="stylesheet">
+	<link href="{{ mix('css/tailwind.css') }}" rel="stylesheet">
 
 	<!-- Bootswatch Cerulean CSS -->
-	<link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
 	<!-- Livewire CSS -->
 
 </head>
@@ -73,9 +74,10 @@ $currentYear = Carbon::now()->year;
 	</div>
 	<!-- footer end -->
 </body>
+<script src="{{ mix('js/app.js') }}"></script>
 <script type="javascript" src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 <script type="javascript" src="{{ asset('js/ckeditor/adapters/jquery.js') }}"></script>
-<script type="module">
+<script>
 	jQuery.noConflict ();
 	(function($){
 		$(document).ready(function(){
