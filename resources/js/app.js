@@ -36,8 +36,6 @@ try {
 
 	require('./bootstrapValidator5');
 
-	// require('./addRemoveRowjQueryPlugins');
-
 	require('./addRemoveRowBootstrapValidatorSweetAlert2AjaxjQueryPlugin');
 
 	require('./bootstrap');
