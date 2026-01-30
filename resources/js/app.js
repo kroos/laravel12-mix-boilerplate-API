@@ -23,6 +23,10 @@ try {
 	window.moment = require('moment');
 	moment().format();
 
+	require('bootstrapValidator5');
+
+	require('addremrow-validator5-swal2-ajax');
+
 	window.swal = require ('sweetalert2');
 
 	require('./jquery-ui-prefix');
@@ -33,10 +37,6 @@ try {
 
 	// require('@claviska/jquery-minicolors');
 	require('./minicolors');
-
-	require('./bootstrapValidator5');
-
-	require('./addRemoveRowBootstrapValidator6SweetAlert2Ajax');
 
 	require('./bootstrap');
 
