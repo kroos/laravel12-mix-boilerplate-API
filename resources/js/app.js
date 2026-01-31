@@ -41,6 +41,6 @@ try {
 	require('./bootstrap');
 
 	require('./dataTable-any-number');
-	require('./datetime-moment');
+	require('./dataTable-moment');
 
 } catch (e) {}
