@@ -39,9 +39,23 @@
 		<div class="col-sm-12 row justify-content-center align-items-center my-1 m-0 border border-success">
 			<div class="form-group row col-sm-6 border border-primary m-1 @error('name') has-error @enderror">
 				<label for="minicolor" class="col-form-label col-sm-4">MiniColors : </label>
-				<div class="col-sm-6 my-auto">
+				<div class="col-sm-8 my-auto">
 					<input type="text" name="minicolor" value="{{ old('minicolor', @$variable->name) }}" id="minicolor" class="form-control form-control-sm @error('minicolor') is-invalid @enderror" placeholder="MiniColors">
 					@error('minicolor')
+					<div class="invalid-feedback">
+						{{ $message }}
+					</div>
+					@enderror
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-12 row justify-content-center align-items-center my-1 m-0 border border-success">
+			<div class="form-group row border border-primary m-1 @error('textarea') has-error @enderror">
+				<label for="textarea" class="col-form-label col-sm-4">Textarea : </label>
+				<div class="col-sm-8 my-auto">
+					<textarea name="textarea" value="" id="textarea" class="form-control form-control-sm @error('minicolor') is-invalid @enderror" placeholder="Textarea">{{ old('textarea', @$variable->textarea) }}</textarea>
+					@error('textarea')
 					<div class="invalid-feedback">
 						{{ $message }}
 					</div>
