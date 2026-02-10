@@ -23,7 +23,7 @@ try {
 	window.moment = require('moment');
 	moment().format();
 
-	require('bootstrapValidator5');
+	require('bootstrapvalidator5');
 
 	require('addremrow-validator5-swal2-ajax');
 
