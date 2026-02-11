@@ -38,9 +38,9 @@ try {
 	// require('@claviska/jquery-minicolors');
 	require('./minicolors');
 
-	require('./bootstrap');
-
 	require('./dataTable-any-number');
 	require('./dataTable-moment');
+
+	require('./bootstrap');
 
 } catch (e) {}

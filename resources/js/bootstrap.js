@@ -35,3 +35,27 @@
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+$(async function () {
+
+    const token = document
+        .querySelector('meta[name="csrf-token"]')
+        ?.getAttribute('content');
+
+    if (!token) {
+        console.error('CSRF token not found');
+        return;
+    }
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': token
+        }
+    });
+
+    try {
+        await $.get('/sanctum/csrf-cookie');
+    } catch (e) {
+        console.warn('Sanctum cookie failed');
+    }
+});
