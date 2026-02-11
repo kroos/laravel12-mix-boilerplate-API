@@ -78,7 +78,6 @@ $currentYear = Carbon::now()->year;
 <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 <script src="{{ asset('js/ckeditor/adapters/jquery.js') }}"></script>
 <script>
-	// jQuery.noConflict ();
 	(function($){
 		$(document).ready(function(){
 			@section('js')

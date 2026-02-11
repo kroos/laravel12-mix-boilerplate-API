@@ -43,4 +43,7 @@ try {
 
 	require('./bootstrap');
 
+	window.config = require('./config/plugins').default;
+
+
 } catch (e) {}
