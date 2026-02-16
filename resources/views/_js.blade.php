@@ -100,32 +100,15 @@ $("#experience_wrap").addRemRow({
 	/* SweetAlert2 and AJAX full option */
 	swal: {
 		options: {
-			title: 'Are you sure?',
-			text: 'It will be deleted permanently!',
-			icon: 'warning',
-			showCancelButton: true,
-			allowOutsideClick: false,
-			showLoaderOnConfirm: true,
-			confirmButtonText: 'Yes, delete it!',
-			confirmButtonColor: '#3085d6',
-			cancelButtonColor: '#d33',
-
-			cancelTitle: 'Cancelled',
-			cancelMessage: 'Your data is safe from delete',
-			cancelType: 'info',
-
-			errorTitle: 'Ajax Error',
-			errorMessage: 'Something went wrong with ajax',
-			errorType: 'error'
+			...config.swal,
 		},
 		ajax: {
-   		dbPrimaryKeyId: 'id',
+	   		dbPrimaryKeyId: 'id',
 			url: `api/person`,
 			method: 'DELETE',
 			dataType: 'json',
 			data: {
-        _token: '{{ csrf_token() }}'
-			}
+			},
 		}
 	},
 
