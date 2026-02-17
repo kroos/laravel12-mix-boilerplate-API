@@ -41,6 +41,8 @@ try {
 	require('./dataTable-any-number');
 	require('./dataTable-moment');
 
+	require('./ckeditor5');
+
 	require('./bootstrap');
 
 	window.config = require('./config/plugins').default;

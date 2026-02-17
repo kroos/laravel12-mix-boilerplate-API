@@ -8,16 +8,9 @@ $(document).ready(function(){
 $(`#minicolor`).minicolors({});
 
 ///////////////////////////////////////////////////////////////////////////////////////////
-$('#textarea').ckeditor({
-    toolbar: [
-        ['Bold', 'Italic'],
-        ['NumberedList', 'BulletedList'],
-        ['Link', 'Unlink'],
-        ['Undo', 'Redo']
-    ],
-    height: 200
+$('#textarea_1, #editor').ckeditor({
+	toolbar: 'advance'
 });
-// CKEDITOR.replace('#textarea');
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 $('#button1').click(function(){

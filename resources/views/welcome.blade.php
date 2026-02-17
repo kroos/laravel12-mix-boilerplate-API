@@ -93,7 +93,7 @@
 			<div class="form-group row m-1 @error('textarea') has-error @enderror">
 				<label for="textarea" class="col-form-label col-sm-4">Textarea : </label>
 				<div class="col-sm-8 my-auto">
-					<textarea name="textarea" value="" id="textarea" class="form-control form-control-sm @error('minicolor') is-invalid @enderror" placeholder="Textarea">{{ old('textarea', @$variable->textarea) }}</textarea>
+					<textarea name="textarea" value="" id="editor" class="form-control form-control-sm @error('minicolor') is-invalid @enderror" placeholder="Textarea">{{ old('textarea', @$variable->textarea) }}</textarea>
 					@error('textarea')
 					<div class="invalid-feedback">
 						{{ $message }}

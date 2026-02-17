@@ -29,3 +29,7 @@ Thumbs.db
 /public/images
 /public/mix-manifest.json
 api
+/public/js/app.js.map
+/public/js/app.js.LICENSE.txt
+/public/css/tailwind.css.map
+/public/css/app.css.map
