@@ -1,3 +1,4 @@
+/*version3*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,3 +10,11 @@
 	@tailwind components;
 	@tailwind utilities;
 }
+
+/*version4*/
+/*@import "tailwindcss";
+.tw {
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+}*/
